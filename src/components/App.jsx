@@ -59,8 +59,6 @@ export class App extends Component {
     }));
   };
 
-  // componentDidMount
-
   componentDidMount() {
     console.log('App componentDidMount');
     const contacts = localStorage.getItem('contacts');
@@ -69,8 +67,6 @@ export class App extends Component {
       this.setState({ contacts: parsedContacts });
     }
   }
-
-  // componentDidUpdate
 
   componentDidUpdate(prevProps, prevState) {
     console.log('App componentDidUpdate');
